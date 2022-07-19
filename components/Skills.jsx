@@ -1,11 +1,6 @@
 import { Container, Row, Col } from "react-bootstrap";
-import Image from "next/image";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
-import meter1 from "../assets/img/meter1.svg";
-import meter2 from "../assets/img/meter2.svg";
-import meter3 from "../assets/img/meter3.svg";
-import colorSharp from "../assets/img/color-sharp.png";
 
 export const Skills = () => {
   const responsive = {
@@ -44,19 +39,19 @@ export const Skills = () => {
                 className="skill-slider"
               >
                 <div className="item">
-                  <Image src={meter1} alt="image" />
+                  <img src="/meter1.svg" alt="image" />
                   <h5>Full Stack Engineering</h5>
                 </div>
                 <div className="item">
-                  <Image src={meter2} alt="image" />
+                  <img src="/meter2.svg" alt="image" />
                   <h5>UI/UX Design</h5>
                 </div>
                 <div className="item">
-                  <Image src={meter3} alt="image" />
+                  <img src="/meter3.svg" alt="image" />
                   <h5>Database Management</h5>
                 </div>
                 <div className="item">
-                  <Image src={meter1} alt="image" />
+                  <img src="/meter1.svg" alt="image" />
                   <h5>Restful API</h5>
                 </div>
               </Carousel>
@@ -64,8 +59,8 @@ export const Skills = () => {
           </Col>
         </Row>
       </Container>
-      <Image
-        src={colorSharp}
+      <img
+        src="/color-sharp.png"
         className="background-image-left"
         alt="colorsharp"
       />
