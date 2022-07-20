@@ -1,6 +1,8 @@
 import { useState, useEffect } from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import { ArrowRightCircle } from "react-bootstrap-icons";
+import "animate.css";
+import TrackVisibility from "react-on-screen";
 
 export const Banner = () => {
   const [loopNum, setLoopNum] = useState(0);
@@ -45,32 +47,53 @@ export const Banner = () => {
       <Container>
         <Row className="align-items-center">
           <Col xs={12} md={6} xl={7}>
-            <span className="tagline">Welcome to my Portfolio</span>
-            <h1>
-              {`Hello, I'm Kenny Tran! `}{" "}
-              <span
-                className="txt-rotate"
-                dataperiod="1000"
-                data-rotate='[ "Web Developer", "Web Designer", "UI/UX Designer" ]'
-              >
-                <span className="wrap">{text}</span>
-              </span>
-            </h1>
-            <p>
-              My journey in software development emerged from my passion of
-              solving real-world problems with code. The web is used in every
-              corner of the world in the modern day. I want to contribute
-              towards developing tech to advance the industry further than ever!
-            </p>
-            <button
-              className="connect-btn"
-              onClick={() => console.log("connect")}
-            >
-              Let’s Connect <ArrowRightCircle size={25} />
-            </button>
+            <TrackVisibility>
+              {({ isVisible }) => (
+                <div
+                  className={
+                    isVisible ? "animate__animated animate__fadeIn" : ""
+                  }
+                >
+                  <span className="tagline">Welcome to my Portfolio</span>
+                  <h1>
+                    {`Hello, I'm Kenny Tran! `}{" "}
+                    <span
+                      className="txt-rotate"
+                      dataperiod="1000"
+                      data-rotate='[ "Web Developer", "Web Designer", "UI/UX Designer" ]'
+                    >
+                      <span className="wrap">{text}</span>
+                    </span>
+                  </h1>
+                  <p>
+                    My journey in software development emerged from my passion
+                    of solving real-world problems with code. The web is used in
+                    every corner of the world in the modern day. I want to
+                    contribute towards developing tech to advance the industry
+                    further than ever!
+                  </p>
+                  <button
+                    className="connect-btn"
+                    onClick={() => console.log("connect")}
+                  >
+                    Let’s Connect <ArrowRightCircle size={25} />
+                  </button>
+                </div>
+              )}
+            </TrackVisibility>
           </Col>
           <Col xs={12} md={6} xl={5}>
-            <img src="/header-img.svg" alt="header-image" />
+            <TrackVisibility>
+              {({ isVisible }) => (
+                <div
+                  className={
+                    isVisible ? "animate__animated animate__zoomIn" : ""
+                  }
+                >
+                  <img src="/header-img.svg" alt="header-image" />
+                </div>
+              )}
+            </TrackVisibility>
           </Col>
         </Row>
       </Container>
