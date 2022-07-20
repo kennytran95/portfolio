@@ -493,6 +493,13 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   z-index: -4;
 }
 
+.projCardImg {
+  /* border: solid 5px red; */
+  object-fit: cover;
+  height: 250px;
+  width: 420px;
+}
+
 /* Contact */
 .contact {
   background: linear-gradient(90.21deg, #aa367c -5.91%, #4a2fbd 111.58%);

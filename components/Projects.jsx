@@ -8,17 +8,18 @@ export const Projects = () => {
     {
       title: "Bark",
       description: "Social Media Website for Dog Owners",
-      imgUrl: "/project-img1.png",
+      imgUrl: "/Blue ocean.gif",
     },
     {
       title: "Scrapbook",
       description: "Postcard Application with song & image development",
-      imgUrl: "/project-img2.png",
+      imgUrl: "/mvp.png",
     },
     {
       title: "Baratheonly",
-      description: "Back End Database optimized for 15+ million data entires",
-      imgUrl: "/project-img3.png",
+      description:
+        "Back End Database optimized for 15+ million data entires for an ecommerce website",
+      imgUrl: "/verde.gif",
     },
     // {
     //   title: "Verde",
@@ -36,14 +37,15 @@ export const Projects = () => {
               {({ isVisible }) => (
                 <div
                   className={
-                    isVisible ? "animate__animated animate__fadeIn" : ""
+                    isVisible
+                    // ? "animate__animated animate__slideInLeft"
+                    // : "animate__animated animate__slideOutRight"
                   }
                 >
-                  <h2>Projects</h2>
+                  <h2>Projects & Information</h2>
                   <p>
-                    These are several projects that I have created recently.
-                    Please take a look and feel free to ask any questions about
-                    them in the contact section below!
+                    These are several projects that I have created recently.{" "}
+                    Please take a look and feel free to ask any questions below!
                   </p>
                   <Tab.Container id="projects-tabs" defaultActiveKey="first">
                     <Nav
@@ -52,20 +54,18 @@ export const Projects = () => {
                       id="pills-tab"
                     >
                       <Nav.Item>
-                        <Nav.Link eventKey="first">Tab 1</Nav.Link>
+                        <Nav.Link eventKey="first">Projects</Nav.Link>
                       </Nav.Item>
                       <Nav.Item>
-                        <Nav.Link eventKey="second">Tab 2</Nav.Link>
+                        <Nav.Link eventKey="second">Experience</Nav.Link>
                       </Nav.Item>
                       <Nav.Item>
-                        <Nav.Link eventKey="third">Tab 3</Nav.Link>
+                        <Nav.Link eventKey="third">Education</Nav.Link>
                       </Nav.Item>
                     </Nav>
                     <Tab.Content
                       id="slideInUp"
-                      className={
-                        isVisible ? "animate__animated animate__slideInUp" : ""
-                      }
+                      className={isVisible ? "animate__zoomOutUp" : ""}
                     >
                       <Tab.Pane eventKey="first">
                         <Row>

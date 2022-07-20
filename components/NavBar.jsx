@@ -55,7 +55,7 @@ export const NavBar = () => {
               Skills
             </Nav.Link>
             <Nav.Link
-              href="#projects"
+              href="#project"
               className={
                 activeLink === "projects" ? "active navbar-link" : "navbar-link"
               }
@@ -66,19 +66,39 @@ export const NavBar = () => {
           </Nav>
           <span className="navbar-text">
             <div className="social-icon">
-              <a href="#">
+              <a
+                href="https://www.linkedin.com/in/kennyytran95/"
+                target="_blank"
+                rel="noreferrer"
+              >
                 <img src="/nav-icon1.svg" alt="linkedIn" />
               </a>
-              <a href="#">
+              <a
+                href="https://github.com/kennytran95"
+                target="_blank"
+                rel="noreferrer"
+              >
                 <FontAwesomeIcon icon={faGithub} className="faIconHover" />
               </a>
-              <a href="#">
+              <a
+                href="https://www.instagram.com/kennyy_tran/"
+                target="_blank"
+                rel="noreferrer"
+              >
                 <img src="/nav-icon3.svg" alt="instagram" />
               </a>
             </div>
-            <button className="vvd">
-              <span>Let’s Connect</span>
-            </button>
+            <Nav.Link
+              href="#connect"
+              className={
+                activeLink === "connect" ? "active navbar-link" : "navbar-link"
+              }
+              onClick={() => onUpdateActiveLink("connect")}
+            >
+              <button className="vvd ">
+                <span>Let’s Connect</span>
+              </button>
+            </Nav.Link>
           </span>
         </Navbar.Collapse>
       </Container>

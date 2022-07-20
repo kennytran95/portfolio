@@ -51,7 +51,9 @@ export const Banner = () => {
               {({ isVisible }) => (
                 <div
                   className={
-                    isVisible ? "animate__animated animate__fadeIn" : ""
+                    isVisible
+                      ? "animate__animated animate__fadeIn"
+                      : "animate__animated animate__hinge"
                   }
                 >
                   <span className="tagline">Welcome to my Portfolio</span>
@@ -87,7 +89,9 @@ export const Banner = () => {
               {({ isVisible }) => (
                 <div
                   className={
-                    isVisible ? "animate__animated animate__zoomIn" : ""
+                    isVisible
+                      ? "animate__animated animate__zoomIn"
+                      : "animate__animated animate__fadeOutUp"
                   }
                 >
                   <img src="/header-img.svg" alt="header-image" />

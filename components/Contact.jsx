@@ -1,5 +1,7 @@
 import { useState } from "react";
 import { Col, Container, Row } from "react-bootstrap";
+import "animate.css";
+import TrackVisibility from "react-on-screen";
 // import axios from "axios";
 
 export const Contact = () => {
@@ -50,7 +52,19 @@ export const Contact = () => {
       <Container>
         <Row className="align-items-center">
           <Col size={12} md={6}>
-            <img src="/contact-img.svg" alt="contact image" />
+            <TrackVisibility>
+              {({ isVisible }) => (
+                <div
+                  className={
+                    isVisible
+                      ? "animate__animated animate__rotateIn"
+                      : "animate__rotateOut"
+                  }
+                >
+                  <img src="/contact-img.svg" alt="contact image" />
+                </div>
+              )}
+            </TrackVisibility>
           </Col>
           <Col md={6}>
             <h2>Get in Touch</h2>
