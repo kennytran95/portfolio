@@ -1,9 +1,5 @@
 import { Nav, Navbar, Container } from "react-bootstrap";
 import { useState, useEffect } from "react";
-import Image from "next/image";
-import logo from "../assets/img/logo.svg";
-import navIcon1 from "../assets/img/nav-icon1.svg";
-import navIcon3 from "../assets/img/nav-icon3.svg";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
 
@@ -33,7 +29,7 @@ export const NavBar = () => {
     <Navbar expand="md" className={scrolled ? "scrolled" : ""}>
       <Container>
         <Navbar.Brand href="/">
-          <Image src={logo} alt="Logo" />
+          <img src="/logo.svg" alt="Logo" />
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav">
           <span className="navbar-toggler-icon"></span>
@@ -71,13 +67,13 @@ export const NavBar = () => {
           <span className="navbar-text">
             <div className="social-icon">
               <a href="#">
-                <Image src={navIcon1} alt="linkedIn" />
+                <img src="/nav-icon1.svg" alt="linkedIn" />
               </a>
               <a href="#">
                 <FontAwesomeIcon icon={faGithub} className="faIconHover" />
               </a>
               <a href="#">
-                <Image src={navIcon3} alt="instagram" />
+                <img src="/nav-icon3.svg" alt="instagram" />
               </a>
             </div>
             <button className="vvd">

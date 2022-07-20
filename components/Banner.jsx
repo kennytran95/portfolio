@@ -1,15 +1,13 @@
 import { useState, useEffect } from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import { ArrowRightCircle } from "react-bootstrap-icons";
-import Image from "next/image";
-import headerImg from "../assets/img/header-img.svg";
 
 export const Banner = () => {
   const [loopNum, setLoopNum] = useState(0);
   const [isDeleting, setIsDeleting] = useState(false);
   const [text, setText] = useState("");
   const [delta, setDelta] = useState(300 - Math.random() * 100);
-  const period = 2000;
+  const period = 400;
   const toRotate = ["Full Stack Engineer", "Web Developer", "UI/UX Designer"];
 
   useEffect(() => {
@@ -38,7 +36,7 @@ export const Banner = () => {
     } else if (isDeleting && updatedText === "") {
       setIsDeleting(false);
       setLoopNum(loopNum + 1);
-      setDelta(500);
+      setDelta(200);
     }
   };
 
@@ -49,7 +47,7 @@ export const Banner = () => {
           <Col xs={12} md={6} xl={7}>
             <span className="tagline">Welcome to my Portfolio</span>
             <h1>
-              {`Hello! I'm Kenny Tran `}{" "}
+              {`Hello, I'm Kenny Tran! `}{" "}
               <span
                 className="txt-rotate"
                 dataperiod="1000"
@@ -59,10 +57,10 @@ export const Banner = () => {
               </span>
             </h1>
             <p>
-              Lorem Ipsum is simply dummy text of the printing and typesetting
-              industry. Lorem Ipsum has been the industrys standard dummy text
-              ever since the 1500s, when an unknown printer took a galley of
-              type and scrambled it to make a type specimen book.
+              My journey in software development emerged from my passion of
+              solving real-world problems with code. The web is used in every
+              corner of the world in the modern day. I want to contribute
+              towards developing tech to advance the industry further than ever!
             </p>
             <button
               className="connect-btn"
@@ -72,7 +70,7 @@ export const Banner = () => {
             </button>
           </Col>
           <Col xs={12} md={6} xl={5}>
-            <Image src={headerImg} alt="header-image" />
+            <img src="/header-img.svg" alt="header-image" />
           </Col>
         </Row>
       </Container>

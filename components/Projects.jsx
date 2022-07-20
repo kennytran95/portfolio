@@ -20,11 +20,11 @@ export const Projects = () => {
       description: "Back End Database optimized for 15+ million data entires",
       imgUrl: "/project-img3.png",
     },
-    {
-      title: "Verde",
-      description: "Front End Capstone Project for an Ecommerce Website",
-      imgUrl: "/project-img1.png",
-    },
+    // {
+    //   title: "Verde",
+    //   description: "Front End Capstone Project for an Ecommerce Website",
+    //   imgUrl: "/project-img1.png",
+    // },
   ];
 
   return (
@@ -41,11 +41,9 @@ export const Projects = () => {
                 >
                   <h2>Projects</h2>
                   <p>
-                    Lorem Ipsum is simply dummy text of the printing and
-                    typesetting industry. Lorem Ipsum has been the industrys
-                    standard dummy text ever since the 1500s, when an unknown
-                    printer took a galley of type and scrambled it to make a
-                    type specimen book.
+                    These are several projects that I have created recently.
+                    Please take a look and feel free to ask any questions about
+                    them in the contact section below!
                   </p>
                   <Tab.Container id="projects-tabs" defaultActiveKey="first">
                     <Nav
