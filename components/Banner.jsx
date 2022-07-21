@@ -94,7 +94,11 @@ export const Banner = () => {
                       : "animate__animated animate__fadeOutUp"
                   }
                 >
-                  <img src="/header-img.svg" alt="header-image" />
+                  <img
+                    src="/cool-removebg-preview.png"
+                    className="hovering-icon"
+                    alt="header-image"
+                  />
                 </div>
               )}
             </TrackVisibility>

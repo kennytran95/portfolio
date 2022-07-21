@@ -10,7 +10,7 @@ export const Footer = () => {
         <Row className="align-item-center">
           <FooterInfoBox />
           <Col size={12} sm={6}>
-            <img src="/logo.svg" alt="logo" />
+            <img src="/kt_no_bg.png" className="kt_logo_foot" alt="logo" />
           </Col>
           <Col size={12} sm={6} className="text-center text-sm-end">
             <div className="social-icon">

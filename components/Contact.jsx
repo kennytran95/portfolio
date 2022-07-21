@@ -124,6 +124,25 @@ export const Contact = () => {
                     </p>
                   </Col>
                 )}
+                <Col size={12} md={6}>
+                  <TrackVisibility>
+                    {({ isVisible }) => (
+                      <div
+                        className={
+                          isVisible
+                            ? "animate__animated animate__backInRight"
+                            : "animate__animated animate__backOutRight"
+                        }
+                      >
+                        <img
+                          src="/code guy.png"
+                          className="code_guy"
+                          alt="contact image"
+                        />
+                      </div>
+                    )}
+                  </TrackVisibility>
+                </Col>
               </Row>
             </form>
           </Col>

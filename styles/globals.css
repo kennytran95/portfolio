@@ -26,6 +26,7 @@ body {
 :root {
   --blue: rgb(0, 110, 255);
   --pink: #ff3c78;
+  --teal: rgba(34, 174, 184, 0.5);
 }
 
 h1,
@@ -221,23 +222,32 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   z-index: 999;
 }
 
+.kt_logo {
+  height: 120px;
+  width: 120px;
+  filter: invert(1);
+  /* border: solid 5px red; */
+}
+
 /* Banner */
 
 .banner {
   margin-top: 0;
   padding: 260px 0 100px 0;
-  background-image: url("/banner-bg.png");
+  background-image: url("/Samurai gates.jpg");
   background-position: top center;
   background-size: cover;
   background-repeat: no-repeat;
+  height: 100vh;
 }
+
 .banner .tagline {
   font-weight: 700;
   letter-spacing: 0.8px;
   padding: 8px 10px;
   background: linear-gradient(
     90.21deg,
-    rgba(170, 54, 124, 0.5) -5.91%,
+    rgba(34, 174, 184, 0.5) -5.91%,
     rgba(74, 47, 189, 0.5) 111.58%
   );
   border: 1px solid rgba(255, 255, 255, 0.5);
@@ -324,6 +334,11 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   transition: all 500ms ease-in-out;
 }
 
+.hovering-icon {
+  height: 422px;
+  width: 574px;
+}
+
 /* Skills */
 
 .skill {
@@ -364,6 +379,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   bottom: 0;
   width: 40%;
   z-index: -4;
+  filter: invert(0.05);
 }
 
 /* Projects */
@@ -416,7 +432,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   position: absolute;
   width: 0;
   height: 100%;
-  background: linear-gradient(90.21deg, #aa367c -5.91%, #4a2fbd 111.58%);
+  background: linear-gradient(90.21deg, lightgray -5.91%, var(--blue) 111.58%);
   top: 0;
   left: 0;
   z-index: -1;
@@ -448,7 +464,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 }
 .proj-imgbx::before {
   content: "";
-  background: linear-gradient(90.21deg, #aa367c -5.91%, #4a2fbd 111.58%);
+  background: linear-gradient(90.21deg, lightgray -5.91%, var(--blue) 111.58%);
   opacity: 0.85;
   position: absolute;
   width: 100%;
@@ -516,7 +532,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 
 /* Contact */
 .contact {
-  background: linear-gradient(90.21deg, #aa367c -5.91%, #4a2fbd 111.58%);
+  background: linear-gradient(90.21deg, darkgray -5.91%, var(--blue) 111.58%);
   padding: 60px 0 200px 0;
 }
 .contact img {
@@ -590,6 +606,9 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   width: 100%;
 }
 
+.code_guy {
+}
+
 /* Footer */
 
 .footer {
@@ -623,7 +642,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 }
 .new-email-bx::before {
   content: "";
-  background: linear-gradient(90.21deg, #aa367c -5.91%, #4a2fbd 111.58%);
+  background: linear-gradient(90.21deg, #aa367c -5.91%, var(--blue) 111.58%);
   border-radius: 20px;
   position: absolute;
   z-index: -1;
@@ -653,7 +672,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   padding: 0 15px;
 }
 .new-email-bx button {
-  background: linear-gradient(90.21deg, #aa367c -5.91%, #4a2fbd 111.58%);
+  background: linear-gradient(90.21deg, var(--blue) -5.91%, lightgray 111.58%);
   padding: 20px 65px;
   color: #fff;
   font-weight: 500;
@@ -669,4 +688,11 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   color: #b8b8b8;
   letter-spacing: 0.5px;
   margin-top: 20px;
+}
+
+.kt_logo_foot {
+  height: 150px;
+  width: 150px;
+  filter: invert(1);
+  /* border: solid 5px red; */
 }
