@@ -1,5 +1,7 @@
 import { Container, Row, Col, Tab, Nav } from "react-bootstrap";
 import { ProjectCard } from "./ProjectCard";
+import { EducationCard } from "./EducationCard";
+import { ExperienceCard } from "./ExperienceCard";
 import "animate.css";
 import TrackVisibility from "react-on-screen";
 
@@ -13,7 +15,7 @@ export const Projects = () => {
     {
       title: "Scrapbook",
       description: "Postcard Application with song & image development",
-      imgUrl: "/mvp.png",
+      imgUrl: "/mvp.gif",
     },
     {
       title: "Baratheonly",
@@ -26,6 +28,36 @@ export const Projects = () => {
     //   description: "Front End Capstone Project for an Ecommerce Website",
     //   imgUrl: "/project-img1.png",
     // },
+  ];
+
+  const experiences = [
+    {
+      title: "Software Engineer Immersive Resident @ Galvanize",
+      description:
+        "My responsibilities included mentoring students, conducting mock interviews, & teaching Javascript, CS fundamentals, and modern web development. I provided on-call technical support for blocked students by debugging and code reviewing. ",
+      imgUrl: "/294990032_5191392587582643_6909683801791927312_n.jpg",
+    },
+    {
+      title: "Veterinary Technician @ Irvine Pet Hospital/Anaheim Animal Care",
+      description:
+        "I have assisted in 500+ surgeries, placed IV catheters, sterilized instruments, and collected lab samples. I worked with pet owners to ensure their pets were in safe hands.",
+      imgUrl: "/golden puppy.jpg",
+    },
+  ];
+
+  const educations = [
+    {
+      title: "UC Davis",
+      description:
+        "I graduated from UC Davis with a bachelors degree in animal sciences. I've been on the Dean's list multiple times!",
+      imgUrl: "/Graduation_Pictures_-23_mvmkts.jpg",
+    },
+    {
+      title: "Hack Reactor",
+      description:
+        "Full Time Software Engineering Bootcamp for computer science, Javascript Fundamentals, and Full stack development. I've worked countless hours in a fast-paced environment with various teams of many sizes.",
+      imgUrl: "/Graduation_Pictures_-125_et7ble.jpg",
+    },
   ];
 
   return (
@@ -74,23 +106,21 @@ export const Projects = () => {
                           })}
                         </Row>
                       </Tab.Pane>
-                      <Tab.Pane eventKey="section">
-                        <p>
-                          Lorem ipsum dolor sit amet consectetur adipisicing
-                          elit. Cumque quam, quod neque provident velit, rem
-                          explicabo excepturi id illo molestiae blanditiis,
-                          eligendi dicta officiis asperiores delectus quasi
-                          inventore debitis quo.
-                        </p>
+                      <Tab.Pane eventKey="second">
+                        <Row>
+                          {experiences.map((experience, index) => {
+                            return (
+                              <ExperienceCard key={index} {...experience} />
+                            );
+                          })}
+                        </Row>
                       </Tab.Pane>
                       <Tab.Pane eventKey="third">
-                        <p>
-                          Lorem ipsum dolor sit amet consectetur adipisicing
-                          elit. Cumque quam, quod neque provident velit, rem
-                          explicabo excepturi id illo molestiae blanditiis,
-                          eligendi dicta officiis asperiores delectus quasi
-                          inventore debitis quo.
-                        </p>
+                        <Row>
+                          {educations.map((education, index) => {
+                            return <EducationCard key={index} {...education} />;
+                          })}
+                        </Row>
                       </Tab.Pane>
                     </Tab.Content>
                   </Tab.Container>

@@ -500,6 +500,20 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   width: 420px;
 }
 
+.expCardImg {
+  /* border: solid 5px red; */
+  object-fit: cover;
+  height: 600px;
+  width: 650px;
+}
+
+.eduCardImg {
+  /* border: solid 5px red; */
+  object-fit: cover;
+  height: 450px;
+  width: 750px;
+}
+
 /* Contact */
 .contact {
   background: linear-gradient(90.21deg, #aa367c -5.91%, #4a2fbd 111.58%);
