@@ -41,8 +41,8 @@ export const Skills = () => {
                   <div className="skill-bx">
                     <h2>Skills</h2>
                     <p>
-                      Lorem Ipsum is simply dummy text of the printing and
-                      typesetting industry.
+                      Over the last year, I have developed my skills by working
+                      on teams with many software engineers.
                     </p>
                     <Carousel
                       responsive={responsive}
