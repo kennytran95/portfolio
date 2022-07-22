@@ -637,13 +637,40 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   background-repeat: no-repeat;
 }
 .newsletter-bx {
-  background: #ffffff;
+  background: linear-gradient(
+    90.21deg,
+    #121212 -5.91%,
+    hsl(194, 82%, 20%) 111.58%
+  );
   border-radius: 55px;
-  color: #121212;
+  color: #ffffff;
   padding: 85px 125px;
   margin-bottom: 80px;
   margin-top: -122px;
+  height: 250px;
+  width: 1500;
 }
+
+/* .message-pop {
+  animation-name: animate-message;
+  animation-duration: 4s;
+  transition-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+@keyframes animate-message {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-50px);
+    color: transparent;
+  }
+  100% {
+    transform: translateY(0px);
+  }
+} */
+
 .newsletter-bx h3 {
   font-weight: 700;
   letter-spacing: 0.5px;

@@ -47,23 +47,54 @@ export const Skills = () => {
                     <Carousel
                       responsive={responsive}
                       infinite={true}
+                      showDots={true}
                       className="skill-slider"
+                      autoPlay={true}
+                      autoPlaySpeed={2250}
                     >
                       <div className="item">
-                        <img src="/meter1.svg" alt="image" />
+                        <img src="/nextjs.svg" alt="image" />
                         <h5>Full Stack Engineering</h5>
                       </div>
                       <div className="item">
-                        <img src="/meter2.svg" alt="image" />
+                        <img src="/picture.svg" alt="image" />
                         <h5>UI/UX Design</h5>
                       </div>
                       <div className="item">
-                        <img src="/meter3.svg" alt="image" />
+                        <img src="/cloud faang.svg" alt="image" />
                         <h5>Database Management</h5>
                       </div>
                       <div className="item">
-                        <img src="/meter1.svg" alt="image" />
+                        <img src="/geolocation.svg" alt="image" />
                         <h5>Restful API</h5>
+                      </div>
+                      <div className="item">
+                        <img src="/authentication.svg" alt="image" />
+                        <h5>Authentication</h5>
+                      </div>
+                      <div className="item">
+                        <img src="/debug.svg" alt="image" />
+                        <h5>Code Reviews & Debugging</h5>
+                      </div>
+                      <div className="item">
+                        <img src="/portfolio.svg" alt="image" />
+                        <h5>Web Development</h5>
+                      </div>
+                      <div className="item">
+                        <img src="/mobile dev.svg" alt="image" />
+                        <h5>Mobile Development</h5>
+                      </div>
+                      <div className="item">
+                        <img src="/cloud hosting.svg" alt="image" />
+                        <h5>Deployment - AWS/Heroku/Vercel</h5>
+                      </div>
+                      <div className="item">
+                        <img src="/frameworks.svg" alt="image" />
+                        <h5>Modern Frameworks and Libraries</h5>
+                      </div>
+                      <div className="item">
+                        <img src="/software engineer.svg" alt="image" />
+                        <h5>System Design</h5>
                       </div>
                     </Carousel>
                   </div>
