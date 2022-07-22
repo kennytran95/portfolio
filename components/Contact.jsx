@@ -2,7 +2,7 @@ import { useState } from "react";
 import { Col, Container, Row } from "react-bootstrap";
 import "animate.css";
 import TrackVisibility from "react-on-screen";
-// import axios from "axios";
+import axios from "axios";
 
 export const Contact = () => {
   const formInitialDetails = {
@@ -27,23 +27,28 @@ export const Contact = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     setButtonText("Sending...");
-    let response = await fetch("http://localhost:5000/contact", {
-      method: "POST",
+    let config = {
+      method: "post",
+      url: `${process.env.NEXT_PUBLIC_API_URL}`,
       headers: {
-        "Content-Type": "application/json;charset=utf-8",
+        "Content-Type": "application/json",
       },
-      body: JSON.stringify(formDetails),
-    });
-    setButtonText("Send");
-    let result = await response.json();
-    setFormDetails(formInitialDetails);
-    if (result.code == 200) {
-      setStatus({ succes: true, message: "Message sent successfully" });
-    } else {
+      data: formDetails,
+    };
+    try {
+      const response = await axios(config);
+      if (response.status === 200) {
+        setButtonText("Send");
+        setFormDetails(formInitialDetails);
+        setStatus({ success: true, message: "Message sent successfully" });
+        console.log(response);
+      }
+    } catch (err) {
       setStatus({
-        succes: false,
+        success: false,
         message: "Something went wrong, please try again later.",
       });
+      console.error(err);
     }
   };
 

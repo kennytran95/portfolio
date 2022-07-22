@@ -40,6 +40,24 @@ h6 {
   line-height: normal;
 }
 
+/* Scrollbar */
+::-webkit-scrollbar {
+  width: 0.7em;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: transparent;
+  border-radius: 100vw;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--pink);
+}
+
 /* Custom Fonts */
 @font-face {
   font-family: Centra;

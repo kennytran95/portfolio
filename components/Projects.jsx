@@ -18,9 +18,9 @@ export const Projects = () => {
       imgUrl: "/mvp.gif",
     },
     {
-      title: "Baratheonly",
+      title: "Verde - Baratheonly",
       description:
-        "Back End Database optimized for 15+ million data entires for an ecommerce website",
+        "Full stack ecommerce website with an API communicating to a database optimized for 15+ million data entires for an ecommerce website",
       imgUrl: "/verde.gif",
     },
     // {
@@ -40,7 +40,7 @@ export const Projects = () => {
     {
       title: "Veterinary Technician @ Irvine Pet Hospital/Anaheim Animal Care",
       description:
-        "I have assisted in 500+ surgeries, placed IV catheters, sterilized instruments, and collected lab samples. I worked with pet owners to ensure their pets were in safe hands.",
+        "I have assisted in 500+ surgeries, placed IV catheters, sterilized instruments, and collected lab samples. I worked my hardest to ensure pet owners that their pet's lives were in the right hands.",
       imgUrl: "/golden puppy.jpg",
     },
   ];
