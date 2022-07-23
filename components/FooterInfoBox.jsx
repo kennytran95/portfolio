@@ -3,19 +3,19 @@ import { useState, useEffect } from "react";
 export const FooterInfoBox = () => {
   const [currentQuote, setCurrentQuote] = useState(0);
 
-  const six = (number) => {
-    if (number === 6) {
-      number = 0;
-    } else {
-      number++;
-    }
-    return number;
-  };
+  // const six = (number) => {
+  //   if (number === 6) {
+  //     number = 0;
+  //   } else {
+  //     number++;
+  //   }
+  //   return number;
+  // };
 
-  setInterval(() => {
-    let newNum = six(currentQuote);
-    setCurrentQuote(newNum);
-  }, 5000);
+  // setInterval(() => {
+  //   let newNum = six(currentQuote);
+  //   setCurrentQuote(newNum);
+  // }, 5000);
 
   const quotes = [
     {
@@ -58,7 +58,7 @@ export const FooterInfoBox = () => {
       <div className="newsletter-bx ">
         <Row>
           <h3 className="message-pop">{quotes[4].message}</h3>
-          <p>{quotes[4].author}</p>
+          <span className="message-author">{quotes[4].author}</span>
         </Row>
       </div>
     </Col>

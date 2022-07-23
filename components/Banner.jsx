@@ -74,12 +74,19 @@ export const Banner = () => {
                     contribute towards developing tech to advance the industry
                     further than ever!
                   </p>
-                  <button
-                    className="connect-btn"
-                    onClick={() => console.log("connect")}
+                  <a
+                    href="https://www.linkedin.com/in/kennyytran95/"
+                    target="_blank"
+                    rel="noreferrer"
+                    className="connect-slide"
                   >
-                    Let’s Connect <ArrowRightCircle size={25} />
-                  </button>
+                    <button
+                      className="connect-btn"
+                      onClick={() => console.log("connect")}
+                    >
+                      Let’s Connect <ArrowRightCircle size={25} />
+                    </button>
+                  </a>
                 </div>
               )}
             </TrackVisibility>
