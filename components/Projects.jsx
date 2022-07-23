@@ -11,17 +11,20 @@ export const Projects = () => {
       title: "Bark",
       description: "Social Media Website for Dog Owners",
       imgUrl: "/Blue ocean.gif",
+      link: "https://github.com/Team-Private-Penguin/Bark",
     },
     {
       title: "Scrapbook",
       description: "Postcard Application with song & image development",
       imgUrl: "/mvp.gif",
+      link: "https://github.com/kennytran95/scrapbook",
     },
     {
       title: "Verde - Baratheonly",
       description:
         "Full stack ecommerce website with an API communicating to a database optimized for 15+ million data entires for an ecommerce website",
       imgUrl: "/verde.gif",
+      link: "https://github.com/RFP-Verde/RFP-2204-FEC",
     },
     // {
     //   title: "Verde",
