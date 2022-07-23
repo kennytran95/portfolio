@@ -37,5 +37,5 @@ export default async function sendMessage(req, res) {
   } catch (err) {
     console.log(err);
   }
-  res.status(200).json(req.body);
+  res.status(200).send("Successfully emailed Kenny Tran! Woot woot!");
 }
