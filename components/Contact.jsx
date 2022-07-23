@@ -41,7 +41,7 @@ export const Contact = () => {
         setButtonText("Send");
         setFormDetails(formInitialDetails);
         setStatus({ success: true, message: "Message sent successfully" });
-        console.log(response);
+        console.log(response.data);
       }
     } catch (err) {
       setStatus({
