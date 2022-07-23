@@ -551,6 +551,14 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   height: 250px;
   width: 420px;
 }
+@media (max-width: 575px) {
+  .projCardImg {
+    /* border: solid 5px red; */
+    object-fit: cover;
+    height: 250px;
+    width: 470px;
+  }
+}
 
 .expCardImg {
   /* border: solid 5px red; */
@@ -672,6 +680,23 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   margin-top: -122px;
   height: 300px;
   width: 1500;
+}
+
+@media (max-width: 770px) {
+  .newsletter-bx {
+    background-image: url("/Music.jpg");
+    height: 500px;
+    width: 500px;
+    font-size: 10px;
+    /* border: solid 5px blue; */
+  }
+}
+
+@media (max-width: 525px) {
+  .newsletter-bx {
+    display: none;
+    /* border: solid 5px red; */
+  }
 }
 
 /* .message-pop {
