@@ -1,6 +1,13 @@
 const nodemailer = require("nodemailer");
+import NextCors from "nextjs-cors";
 
 export default async function sendMessage(req, res) {
+  await NextCors(req, res, {
+    methods: ["GET", "HEAD", "PUT", "PATCH", "POST", "DELETE"],
+    origin: "*",
+    optionsSuccessStatus: 200,
+  });
+
   const name = req.body.firstName + req.body.lastName;
   const email = req.body.email;
   const message = req.body.message;
