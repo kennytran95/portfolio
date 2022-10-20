@@ -312,9 +312,10 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   color: var(--teala);
   margin-left: 25px;
 }
-.banner img {
+/* .banner img {
   animation: updown 3s linear infinite;
-}
+} */
+
 @keyframes updown {
   0% {
     transform: translateY(-20px);
@@ -358,13 +359,21 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 }
 
 .hovering-icon {
-  height: 422px;
-  width: 574px;
+  position: relative;
+  /* top: 10vh; */
+  left: 100px;
+}
+
+.connect-title {
+  text-transform: uppercase;
+  text-shadow: 1px 1px 2px rgb(119, 0, 255), 0 0 1em blue,
+    0 0 0.2em rgb(0, 247, 255);
+  color: rgb(255, 255, 255);
 }
 
 .connect-slide {
   text-decoration: none;
-  color: white;
+  color: rgb(255, 255, 255);
 }
 
 /* Skills */
@@ -572,6 +581,25 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   object-fit: cover;
   height: 450px;
   width: 750px;
+}
+
+.techList {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  gap: 3%;
+}
+
+.techListItem {
+  color: rgb(0, 0, 0);
+  background-color: rgb(255, 255, 255, 0.7);
+  list-style: none;
+  font-size: 12px;
+  border-radius: 10px;
+  padding: 2px 10px;
+  box-shadow: 2px 2px 3px black;
+  /* height: 10px;
+  width: 10px; */
 }
 
 /* Contact */

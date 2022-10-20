@@ -92,25 +92,25 @@ export const Banner = () => {
               )}
             </TrackVisibility>
           </Col>
-          <Col xs={12} md={6} xl={5}>
+          {/* <Col xs={12} md={6} xl={5}>
             <TrackVisibility>
               {({ isVisible }) => (
                 <div
                   className={
                     isVisible
-                      ? "animate__animated animate__zoomIn"
-                      : "animate__animated animate__fadeOutUp"
+                      ? "animate__animated animate__fadeInRight"
+                      : "animate__animated animate__fadeOutRight"
                   }
                 >
                   <img
-                    src="/cool-removebg-preview.png"
+                    src="/FB_IMG_1561366841295-removebg-preview.png"
                     className="hovering-icon"
                     alt="header-image"
                   />
                 </div>
               )}
             </TrackVisibility>
-          </Col>
+          </Col> */}
         </Row>
       </Container>
     </section>

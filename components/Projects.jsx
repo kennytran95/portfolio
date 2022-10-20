@@ -9,15 +9,27 @@ export const Projects = () => {
   const projects = [
     {
       title: "Bark",
-      description: "Social Media Website for Dog Owners",
+      description:
+        "Facebook/Twitter replica for Dog Owners. Create & join events, organize meetups at your nearest dog parks, search for events sorted by users, groups, or events, and 1-on-1 messaging!",
       imgUrl: "/Blue ocean.gif",
       link: "https://github.com/Team-Private-Penguin/Bark",
+      stack: ["next.js", "typescript", "postgreSQL", "React", "mantineUI"],
     },
     {
       title: "Scrapbook",
-      description: "Postcard Application with song & image development",
+      description:
+        "Create your own digital postcards to remember all of your precious memories. Each postcard interacts with the spotify API to play a song that captured the moment.",
       imgUrl: "/mvp.gif",
       link: "https://github.com/kennytran95/scrapbook",
+      stack: [
+        "mongoDB",
+        "typescript",
+        "Spotify API",
+        "React",
+        "Cloudinary API",
+        "Express.js",
+        "node.js",
+      ],
     },
     {
       title: "Verde - Baratheonly",
@@ -25,6 +37,17 @@ export const Projects = () => {
         "Full stack ecommerce website with an API communicating to a database optimized for 15+ million data entires for an ecommerce website",
       imgUrl: "/verde.gif",
       link: "https://github.com/RFP-Verde/RFP-2204-FEC",
+      stack: [
+        "typescript",
+        "postgreSQL",
+        "Loader.io",
+        "NGINX",
+        "React",
+        "CSS",
+        "Cloudinary API",
+        "node.js",
+        "express.js",
+      ],
     },
     // {
     //   title: "Verde",
