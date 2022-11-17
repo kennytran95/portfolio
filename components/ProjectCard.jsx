@@ -1,7 +1,6 @@
 import { Col } from "react-bootstrap";
 
 export const ProjectCard = ({ title, description, imgUrl, link, stack }) => {
-  console.log(stack, "got it?");
   return (
     <Col size={12} sm={6} md={4}>
       <a href={link} target="_blank" rel="noreferrer">

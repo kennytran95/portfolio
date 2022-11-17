@@ -63,6 +63,24 @@ export const NavBar = () => {
             >
               Projects
             </Nav.Link>
+            <Nav.Link
+              href="/About"
+              className={
+                activeLink === "About Me" ? "active navbar-link" : "navbar-link"
+              }
+              onClick={() => {}}
+            >
+              About Me
+            </Nav.Link>
+            {/* <Nav.Link
+              href=""
+              className={
+                activeLink === "About Me" ? "active navbar-link" : "navbar-link"
+              }
+              onClick={() => {}}
+            >
+              Project Details
+            </Nav.Link> */}
           </Nav>
           <span className="navbar-text">
             <div className="social-icon">
