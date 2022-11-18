@@ -8,12 +8,63 @@ import TrackVisibility from "react-on-screen";
 export const Projects = () => {
   const projects = [
     {
+      title: "K-List",
+      description:
+        "Business List Organization app to create recommendation lists for your friends! Create and sort lists using the Yelp Fusion API to have direct real time search access to your favorite businesses.",
+      imgUrl: "/klist.gif",
+      link: "https://github.com/kennytran95/k-list",
+      stack: [
+        "React",
+        "Javascript",
+        "MaterialUI",
+        "Express",
+        "Next.js",
+        "MySQL",
+        "Yelp Fusion API",
+      ],
+    },
+    {
+      title: "Alley oops",
+      description:
+        "Team organizing app for basketball players. Create and join groups, organize basketball sessions by finding teammates and messaging them!",
+      imgUrl: "/alleyoops.gif",
+      link: "https://github.com/kennytran95/alleyoop",
+      stack: [
+        "React Native",
+        "Expo",
+        "MaterialUI",
+        "React Navigation",
+        "Firebase",
+      ],
+    },
+    {
+      title: "My Portfolio",
+      description:
+        "It's this portfolio that you're looking at right now!!! Please explore more!",
+      imgUrl: "/portfolio.png",
+      link: "https://github.com/kennytran95/portfolio",
+      stack: [
+        "React",
+        "CSS",
+        "Intersection Observer",
+        "Animate.css",
+        "Nodemailer",
+      ],
+    },
+    {
       title: "Bark",
       description:
         "Facebook/Twitter replica for Dog Owners. Create & join events, organize meetups at your nearest dog parks, search for events sorted by users, groups, or events, and 1-on-1 messaging!",
       imgUrl: "/Blue ocean.gif",
       link: "https://github.com/Team-Private-Penguin/Bark",
-      stack: ["next.js", "typescript", "postgreSQL", "React", "mantineUI"],
+      stack: [
+        "Next.js",
+        "Typescript",
+        "PostgreSQL",
+        "React",
+        "MantineUI",
+        "Google Maps API",
+      ],
     },
     {
       title: "Scrapbook",
@@ -22,13 +73,13 @@ export const Projects = () => {
       imgUrl: "/mvp.gif",
       link: "https://github.com/kennytran95/scrapbook",
       stack: [
-        "mongoDB",
-        "typescript",
+        "MongoDB",
+        "Typescript",
         "Spotify API",
         "React",
         "Cloudinary API",
         "Express.js",
-        "node.js",
+        "Node.js",
       ],
     },
     {
@@ -38,15 +89,15 @@ export const Projects = () => {
       imgUrl: "/verde.gif",
       link: "https://github.com/RFP-Verde/RFP-2204-FEC",
       stack: [
-        "typescript",
-        "postgreSQL",
+        "Typescript",
+        "PostgreSQL",
         "Loader.io",
         "NGINX",
         "React",
         "CSS",
         "Cloudinary API",
-        "node.js",
-        "express.js",
+        "Node.js",
+        "Express.js",
       ],
     },
     // {

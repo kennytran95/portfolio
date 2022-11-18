@@ -826,14 +826,17 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 
 .about-banner {
   margin-top: 0;
+  /* border: solid 5px red; */
   padding: 260px 0 100px 0;
-  background-image: url("/sunset.jpg");
+  background-image: url("/itachi2.jpg");
   background-position: top center;
   background-size: cover;
   background-repeat: no-repeat;
   height: 100vh;
   display: flex;
   justify-content: center;
+  font-family: "Roboto";
+  font-size: 12px;
 }
 
 .about-navbar {
@@ -892,15 +895,211 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   border: solid 1px red;
 }
 
+.kenny-shoot {
+  background-image: url("/shooting.gif");
+  border: solid 2px white;
+  margin-top: 0;
+  padding: 10vw 30vh;
+  background-position: top center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  /* min-width: 30rem; */
+}
+
 .kenny-spike {
-  height: 20rem;
-  width: 15rem;
+  background-image: url("/kenny spike.jpg");
+  border: solid 2px white;
+  margin-top: 0;
+  padding: 260px 0 100px 0;
+  background-position: top center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-width: 20rem;
 }
 
 .row-col-container {
   background-color: rgb(0, 0, 0, 0.78);
-  width: 80vw;
+  border: solid 1px white;
+  border-radius: 0.5rem;
+  padding: 2rem;
+  width: 50vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  min-width: 40rem;
+  animation: up-down 1s ease-in-out;
+}
+
+.left-trans {
+  animation: left-right 1s ease-in-out;
+}
+
+@keyframes left-right {
+  0% {
+    opacity: 0%;
+    transform: translateX(-10%);
+  }
+  100% {
+    opacity: 100%;
+    transform: translateX(0%);
+  }
+}
+
+.right-trans {
+  animation: right-left 1s ease-in-out;
+}
+
+@keyframes right-left {
+  0% {
+    opacity: 0%;
+    transform: translateX(10%);
+  }
+  100% {
+    opacity: 100%;
+    transform: translateX(0%);
+  }
+}
+
+@keyframes up-down {
+  0% {
+    opacity: 0%;
+    transform: translateY(-10%);
+  }
+  100% {
+    opacity: 100%;
+    transform: translateY(0%);
+  }
+}
+
+.row-col-container2 {
+  /* background-color: rgb(0, 0, 0, 0.78); */
+  /* border: solid 3px red; */
+  border-radius: 2rem;
+  padding: 2rem;
+  width: 60vw;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  align-items: center;
+}
+
+.vb-container {
+  /* background-color: red; */
+}
+
+.vb-text-col {
+  /* background-color: red; */
+}
+
+.friends {
+  background-image: url("/homies.jpg");
+  border: solid 2px white;
+  margin-top: 0;
+  padding: 260px 0 100px 0;
+  background-position: top center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100%;
+  width: 20rem;
+  margin-bottom: 5rem;
+}
+
+.row-col-container3 {
+  /* background-color: rgb(0, 0, 0, 0.78); */
+  /* border: solid 3px red; */
+  border-radius: 2rem;
+  padding: 2rem;
+  width: 60vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.row-col-container4 {
+  /* background-color: rgb(0, 0, 0, 0.78); */
+  /* border: solid 3px red; */
+  border-radius: 2rem;
+  width: 60vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.text-container {
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 2rem 2rem 0rem;
+  border-radius: 0.5rem;
+  color: white;
+  overflow: scroll;
+  overflow-x: hidden;
+  animation: up-down 1s ease-in-out;
+}
+
+.about-banner2 {
+  margin-top: 0;
+  padding: 260px 0 100px 0;
+  background-image: url("/Music.jpg");
+  background-position: bottom center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  text-shadow: 2px 2px #000000;
+  font-family: "Nunito";
+  font-size: 20px;
+  font-weight: 100;
+}
+
+.about-banner3 {
+  margin-top: 0;
+  padding: 260px 0 100px 0;
+  background-image: url("/bike.jpg");
+  background-position: bottom center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+  color: rgb(255, 255, 255);
+  text-shadow: 2px 2px #000000;
+  display: flex;
+  justify-content: center;
+  font-family: "Roboto";
+  font-size: 16px;
+}
+
+.text-banner {
+  margin-top: 0;
+  padding: 250px 0 100px 0;
+  background-image: url("/Kimi No Nawa.jpg");
+  background-position: bottom center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  font-family: "Nunito";
+  font-size: 18px;
+}
+
+.opening {
+  font-family: "Montserrat";
+  font-weight: 100;
+  font-size: 3rem;
+  /* background-color: red; */
+}
+
+.para {
+  font-family: "Nunito";
+  font-weight: 500;
+}
+
+.closing {
+  font-family: "Tangerine", cursive;
+  font-size: 2rem;
+  text-shadow: 1.5px 1.5px 2.5px rgba(68, 0, 255, 0.911);
+  /* background-color: red;
+  border: solid 5px blue; */
 }
