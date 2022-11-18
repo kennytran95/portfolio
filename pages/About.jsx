@@ -158,28 +158,28 @@ function About() {
             <br />
             <p className="para">
               In my previous career, I was an unregistered veterinary technician
-              striving to go to veterinary school for my doctorate's degree.
-              Without having a certification for being a veterinary technician,
-              I learned all of my skills quickly and efficiently on the job. I
-              highly prioritize my client's experience by ensuring that the pet
-              and pet owner are highly satisfied by effectively communicating
-              and minimizing healthcare mistakes. As a result, I was able to
-              increase the amounts of clients/day that the hospital could take
-              by over 30% in the upcoming months. Similarly to my career in
-              veterinary medicine, I have acquired my software engineering
-              skills and learned technologies extremely efficiently and
-              thoroughly.
+              striving to go to veterinary school for my doctorate&apos;s
+              degree. Without having a certification for being a veterinary
+              technician, I learned all of my skills quickly and efficiently on
+              the job. I highly prioritize my client&apos;s experience by
+              ensuring that the pet and pet owner are highly satisfied by
+              effectively communicating and minimizing healthcare mistakes. As a
+              result, I was able to increase the amounts of clients/day that the
+              hospital could take by over 30% in the upcoming months. Similarly
+              to my career in veterinary medicine, I have acquired my software
+              engineering skills and learned technologies extremely efficiently
+              and thoroughly.
             </p>
             <br />
             <p className="para">
-              Currently, teh tech stack that I am most familiar with includes
+              Currently, the tech stack that I am most familiar with includes
               Javascript, React, Node.js, Express.js, Git, Github, Next.js and a
               variety of databases including MySQL, MongoDB, & PostgreSQL. I
               have experience with mobile development as I have created projects
               with React Native. I have lead teams by managing a codebase and
               approving pull requests after doing code reviews. I am confident
               in my skills to build a full stack website, scaling a large
-              server, develop RESTful API's, create UX/UI designs, & grant
+              server, develop RESTful API&apos;s, create UX/UI designs, & grant
               additionals features such as but not limited to user
               authentication, cloud based image hosting, & cloud based
               deployment.
