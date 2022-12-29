@@ -8,6 +8,22 @@ import TrackVisibility from "react-on-screen";
 export const Projects = () => {
   const projects = [
     {
+      title: "Otterfit",
+      description:
+        "Frontend code for Ecommerce application interacting with an express/postgresql backend",
+      imgUrl: "/Otterfit.gif",
+      link: "https://github.com/kennytran95/otterfit",
+      stack: ["Angular", "OOP", "Express", "PostgreSQL"],
+    },
+    {
+      title: "Hotel Booking API",
+      description:
+        "REST API to manage Hotel Bookings using an in-memory database",
+      imgUrl: "/HotelBookings.gif",
+      link: "https://github.com/kennytran95/HotelBookingAPI",
+      stack: ["C#", ".NET6.0", "MVC", "RESTful API", "In-Memory Database"],
+    },
+    {
       title: "K-List",
       description:
         "Business List Organization app to create recommendation lists for your friends! Create and sort lists using the Yelp Fusion API to have direct real time search access to your favorite businesses.",
@@ -100,11 +116,6 @@ export const Projects = () => {
         "Express.js",
       ],
     },
-    // {
-    //   title: "Verde",
-    //   description: "Front End Capstone Project for an Ecommerce Website",
-    //   imgUrl: "/project-img1.png",
-    // },
   ];
 
   const experiences = [
