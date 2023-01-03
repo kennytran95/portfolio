@@ -8,6 +8,14 @@ import TrackVisibility from "react-on-screen";
 export const Projects = () => {
   const projects = [
     {
+      title: "Pokemongo - Pokexpress",
+      description:
+        "Pokemon application for displaying different types of pokemon with individual stat pages.The back end is dockerized using Node.js and Mongodb!",
+      imgUrl: "/pokemongo.gif",
+      link: "https://github.com/kennytran95/pokemongo",
+      stack: ["Docker", "React", "Next.js", "Node.js", "Express.js", "MongoDB"],
+    },
+    {
       title: "Otterfit",
       description:
         "Frontend code for Ecommerce application interacting with an express/postgresql backend",
